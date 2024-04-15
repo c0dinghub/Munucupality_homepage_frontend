@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Binayi Tribeni Rural Municipality</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="mini-nav flex">
+            <div class="mini-nav1">
+                <img class="icon1" src="C:\xampp\htdocs\projectweb\img\fb-removebg-preview.png" alt="Facebook Icon" id="icon">
+                <img class="icon2" src="C:\xampp\htdocs\projectweb\img\yt-removebg-preview.png" alt="Youtube Icon">
+            </div>
+            <div class="mini-nav2">
+                <img class="icon3" src="C:\xampp\htdocs\projectweb\img\be7f7eb1f18933369cf644f87bc8c74b-telephone-round-icon.webp" alt="Phone Icon">
+                <img class="icon4" src="C:\xampp\htdocs\projectweb\img\images__1_-removebg-preview.png" alt="Gmail Icon">
+            </div>
+        </div>
+        <div class="main-nav flex">
+            <div class="nav-logo flex">
+                <div class="logo">
+                    <img src="C:\xampp\htdocs\projectweb\img\logo-removebg-preview.png" alt="Logo">
+                </div>
+                <div class="main-nav-text">
+                    <h2 id="title">Binayi Tribeni Rural Municipality</h2>
+                    <h3 id="subtitle">Office of Municipal Executive, Nawalparasi, Gandaki Province</h3>
+                </div>
+            </div>
+            <div class="main-nav-flag">
+                <img src="C:\xampp\htdocs\projectweb\img\1.gif" alt="Nepal Flag" id="flag" width="80px">
+            </div>
+        </div>
+        <div class="nav-news">
+          <div class="container">
+            <div class="ticker">
+              <div class="title"><h3>News</h3></div>
+              <div class="news">
+                <marquee>
+                  <p>-शिक्षक आवश्यकता  | नतिजा प्रकाशन सम्बन्धमा । कृषि कार्यक्रममा सहभागिताको लागी प्रस्ताव पेश गर्ने सम्बन्धी सूचना  ।  
+                    छोटो सुची, कम्युटर सम्बन्धी सिप परीक्षण तथा अन्तरवार्ता सम्बन्धी सूचना ।</p>
+                </marquee>
+              </div>
+            </div>
+          </div>
+              
+          </div>
+      </div>
+      
+        </div>
+        <div class="nav-list flex">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li class="active">Introduction</li>
+                <li class="active">Services</li>
+                <li class="active">Download</li>
+                <li class="active">Notices</li>
+                <li class="active">Contact</li>
+            </ul>
+            
+            <button class="successHomeBtn" onclick="navigate('/applicationStatus')" >Application Status</button>
+            <button id="employee-login-btn" type="" onclick="navigate('/vrms-admin')">Admin Login</button>
+        </div>
+
+    </div>
+    
+</header>
+<div class="images">
+  
+     <!--image slider start-->
+     <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="C:\xampp\htdocs\projectweb\img\nepal-flag.jpg" >
+         </div>
+         <div class="slide">
+          <img src="C:\xampp\htdocs\projectweb\img\sddefault.jpg" >
+         </div>
+         <div class="slide">
+          <img src="C:\xampp\htdocs\projectweb\img\Shashwat_dham.jpg">
+         </div>
+         <div class="slide">          
+          <img src="C:\xampp\htdocs\projectweb\img\monk.jpg" >
+         </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+</div>
+
+<div class="pop">
+  <link rel="stylesheet" href="card.css">
+
+  <div class="container">
+    <div class="card">
+      <div class="img1">
+        <img src="C:\xampp\htdocs\projectweb\img\ghanshyam1.png" alt="Mayor">
+      </div>
+      <div class="intro">
+        <h3 style="text-decoration: underline;">Mayor</h2>
+        <p>Ghanshyam Giri</p>
+        <p>Phone: 9857023048</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img2">
+        <img src="C:\xampp\htdocs\projectweb\img\bhagwati mam 001 (1).jpg" alt="Deputy-Mayor">
+      </div>
+      <div class="intro">
+        <h3 style="text-decoration: underline;">Deputy-Mayor</h2>
+          <p>Bhagwati Baidhawar Chhetri</p>
+          <p>Phone: 9845087752</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img3">
+       <img src="C:\xampp\htdocs\projectweb\img\bodhrajsir (1).png" alt="Chief Administrative Officer">
+      </div>
+      <div class="intro">
+        <h3 style="text-decoration: underline;">Chief Administrative Officer</h2>
+          <p>Bodhraj Bashyal</p>
+          <p>Phone: 9857056639</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img4">
+        <img src="C:\xampp\htdocs\projectweb\img\कृष्ण प्रसाद अर्याल_2 (1).jpg" alt="Information Officer">
+      </div>
+      <div class="intro">
+        <h3 style="text-decoration: underline;">Information Officer</h2>
+          <p>Krishna Prasad Aryal</p>
+          <p>Phone: 9857046821</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img5">
+        <img src="C:\xampp\htdocs\projectweb\img\IMG_20201015_205841.jpg" alt="Account Officer">
+      </div>
+      <div class="intro">
+        <h3 style="text-decoration: underline;">Account Officer</h2>
+          <p>Raju Subedi</p>
+          <p>Phone: 9857056637</p>
+      </div>
+    </div>      
+</div>
+
+
+
+<div class="footer">
+    <div class="footer-first flex">
+      <div class="foot-office-details">
+        <div class="footer-logo">
+          <img id="logo" src="C:\xampp\htdocs\projectweb\img\logo-removebg-preview.png" alt="Logo">
+        </div>
+        <h2>Binayi Tribeni Rural Municipality</h2>
+        <h3>Office of Municipal Executive</h3>
+        <h3>Gandaki Province, Nawalparasi(East)</h3>
+        <h5>Phone: <span id="phone">078416185</span></h5>
+        <h5>G-mail: <span id="gmail">ito.binayitrivenimun@gmail.com</span></h5>
+      </div>
+      <div class="foot-egovServices">
+        <h3>E-Gov Services</h3>
+        <ul>
+          <li id="marriageRegistration">Marriage Registration</li>
+          <li id="migrationRegistration">Migration Registration</li>
+        </ul>
+      </div>
+            <div class="location">
+        <h3>Office Location</h3>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.3782186114568!2d83.86339610966039!3d27.581801376155717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399439ea54f07c17%3A0xc4d409e55c855e90!2sbinayi%20tribeni%20rural%20municipality!5e0!3m2!1sen!2snp!4v1712237257563!5m2!1sen!2snp" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+      </div>
+    </div>
+    <div class="footer-second flex">
+      <h5>&copy; Binayi Tribeni Rural Municipality, Nawalparasi(East)</h5>
+    </div>
+  </div>
+<script src="slides.js"></script>
+<script src="new.js"></script>
+</body>
+</html>

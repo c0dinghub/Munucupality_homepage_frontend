@@ -1,0 +1,65 @@
+.pop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+
+.card {
+  flex: 1 0 150px;
+  max-width: 200px;
+  position: relative;
+  margin: 10px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  height: 290px;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.card:hover .intro {
+  margin-top: 500px;
+  opacity: 0.8;
+  bottom: 0;
+  height: 135px;
+  }
+
+.card img
+{
+  height: 250px;
+  width: 100%;
+  border-radius: 3px;
+  object-fit: cover;
+  
+}
+.container .card{
+  height: 250px;
+
+}
+.intro {
+  position: absolute;
+  opacity: 0;
+  height: 148px;
+  width: 220px; /* Adjusted intro width */
+  right: 0;
+  left: 0;
+  padding: 9px;
+  box-sizing: content-box;
+  background: rgb(27, 27, 27);
+  color: white;
+  bottom: -150px; /* Changed initial position to be outside the card */
+  transition: opacity 0.3s ease, bottom 0.3s ease; /* Added transition for bottom position */
+}
+
+

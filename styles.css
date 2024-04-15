@@ -1,0 +1,398 @@
+/* Resetting default styles for number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+body{
+  margin: 0%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 42px;
+  padding-right: 42px;
+  background-color: #224c83;
+}
+
+/* Flexbox utility class */
+.flex {
+  display: flex;
+}
+
+/* Navbar and header styles */
+.navbar {
+  color: white;
+  width: 100%;
+}
+header {
+  background-color: #2d67b4;
+  border-radius: 5px;
+
+}
+
+/* Mini-nav styles */
+.mini-nav {
+  justify-content: space-between;
+  align-items: center;
+  height: 40px; /* Adjusted height for better visibility */
+  padding: 12px 20px; /* Adjusted padding for better spacing */
+  margin-bottom: 30px;
+}
+.mini-nav1 {
+  margin-right: 5px;
+  border: none;
+}
+.icon1{
+  width: 42px;
+  margin-bottom: 20x;
+  margin-right: -15px;
+  margin-left: -15PX;
+  mix-blend-mode: initial;
+
+}
+.icon2{
+  width: 37px;
+  margin-bottom: 6.5px;
+  mix-blend-mode: initial;
+
+
+}
+
+.icon3{
+  width: 23px;
+  margin-right: 7px;
+  margin-bottom: -6px;
+
+}
+.icon4{
+  width: 23px;
+  margin-bottom: -6.5px;
+}
+/* Main-nav styles */
+.main-nav {
+  font-family: 'Tauri', sans-serif;
+  height: 70px; /* Adjusted height for better visibility */
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 20px; /* Adjusted padding for better spacing */
+  margin-bottom: 10px;
+}
+
+.main-nav h2 {
+  cursor: pointer;
+}
+.main-nav-text h2 {
+  margin-bottom: 5px; /* Adjust the value as needed to reduce the spacing */
+}
+
+.main-nav-text h3 {
+  margin-top: 5px; /* Adjust the value as needed to reduce the spacing */
+}
+
+.main-nav .logo img {
+  width: 120px;
+  height: 110px;
+  padding: 5px 0;
+  margin-bottom: 35px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.main-nav-flag img{
+  margin-bottom: 30px;
+}
+
+/* Nav-news styles */
+.nav-news {
+  height: 32px; /* Adjusted height for better visibility */
+  background-color: #2a5690;
+  align-items: center;
+  padding: 4px 0px; /* Adjusted padding for better spacing */
+  overflow: hidden;
+  display: flex;
+}
+
+.ticker{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+height: 70px;
+margin: 0;
+}
+.news{
+  width: 91%;
+  padding: 0 ;
+}
+.title{
+  width: 9%;
+  text-align: center;
+  position: relative;
+  background: #c81c1c;
+}
+
+.title h3{
+  font-size: 22px;
+  margin: 15% 0;
+}
+.news marquee{
+  font-size: 17px;
+  color: white;
+  word-spacing: 1vh;
+}
+
+
+
+/* Nav-list styles */
+.nav-list {
+  background-color: #2d67b4;
+  height: 55px;
+  padding: 0 6.5px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  
+}
+.nav-list ul {
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 0;
+}
+.nav-list ul li {
+  font-family: 'Tauri', sans-serif;
+  list-style: none;
+  display: inline;
+  height: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+  margin-right: 40px; /* Adjusted margin for better spacing */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+.nav-list ul li a {
+  text-decoration: none;
+  color: black;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 10px; /* Adjusted padding for better clickability */
+  display: inline-block;
+}
+.nav-list ul li:hover {
+  text-decoration: underline;
+  color: white; /* Change text color on hover */
+   /* Change background color on hover */
+}
+
+.nav-list ul li.active a {
+  text-decoration: underline;
+  color: white; /* Change text color for active link */
+  /* Add additional styling as needed */
+}
+.nav-list ul li a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: white; /* Change color on hover */
+}
+
+
+.nav-list button {
+  background-color: white;
+  height: 30px;
+  padding: 2.5px 5.5px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+  color: #2d67b4;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-list button:hover {
+  background-color: #224c83;
+  color: white;
+}
+/* Adjust spacing between Admin Login and Application Status buttons */
+#employee-login-btn {
+  margin-right: 0px; /* Adjust the margin-right as needed */
+}
+.successHomeBtn {
+  margin-left: 120px; /* Adjust the margin-left as needed */
+}
+
+
+/*footer css*/
+.flex{
+  display: flex;
+  color: white;
+}
+.footer{
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.footer-second{
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+/* Target h2, h3, and h5 elements inside the footer */
+.footer h2,
+.footer h3,
+.footer h5 {
+
+    margin-top: 5px; /* Adjust the top margin as needed */
+    margin-bottom: 5px; /* Adjust the bottom margin as needed */
+    font-family: 'Tauri', sans-serif;
+}
+
+.footer-first{
+  height: 210px;
+  background-color: #2d67b4;
+  padding: 30px 25px;
+}
+.footer-second{
+  background-color: #2a5690;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.location{
+  margin-left: 15%;
+}
+.location iframe{
+  width: 270px;
+  height: 200px;
+}
+.footer-logo img{
+  width: 80px;
+  cursor: pointer;
+}
+.foot-egovServices{
+  text-align: justify;
+}
+.foot-egovServices h3{
+  margin-left: 80px;
+}
+.foot-egovServices li{
+  margin-top: 5px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.images{
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 0;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}

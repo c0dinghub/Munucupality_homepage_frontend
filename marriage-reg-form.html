@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Registration Form</title>
+    <style>
+      body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="number"],
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+</head>
+<body>
+  <div id="header-container"></div>
+  <div class="container">
+    <h2>Marriage Registration Form</h2>
+    <form action="submit_marriage_registration.php" method="post" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="partner1Name">Partner 1 Full Name:</label>
+        <input type="text" id="partner1Name" required>
+      </div>
+      <div class="form-group">
+        <label for="partner1DOB">Partner 1 Date of Birth:</label>
+        <input type="date" id="partner1DOB" required>
+      </div>
+      <div class="form-group">
+        <label for="partner1Email">Partner 1 Email:</label>
+        <input type="text" id="partner1Email" required>
+      </div>
+      <div class="form-group">
+        <label for="partner1IDProof">Partner 1 ID Proof:</label>
+        <input type="file" id="partner1IDProof" required>
+      </div>
+      <div class="form-group">
+        <label for="partner2Name">Partner 2 Full Name:</label>
+        <input type="text" id="partner2Name" required>
+      </div>
+      <div class="form-group">
+        <label for="partner2DOB">Partner 2 Date of Birth:</label>
+        <input type="date" id="partner2DOB" required>
+      </div>
+      <div class="form-group">
+        <label for="partner2Email">Partner 2 Email:</label>
+        <input type="text" id="partner2Email" required>
+      </div>
+      <div class="form-group">
+        <label for="partner2IDProof">Partner 2 ID Proof:</label>
+        <input type="file" id="partner2IDProof" required>
+      </div>
+      <div class="form-group">
+        <label for="witness1Name">Witness 1 Full Name:</label>
+        <input type="text" id="witness1Name" required>
+      </div>
+      <div class="form-group">
+        <label for="witness1IDProof">Witness 1 ID Proof:</label>
+        <input type="file" id="witness1IDProof" required>
+      </div>
+      <div class="form-group">
+        <label for="witness2Name">Witness 2 Full Name:</label>
+        <input type="text" id="witness2Name" required>
+      </div>
+      <div class="form-group">
+        <label for="witness2IDProof">Witness 2 ID Proof:</label>
+        <input type="file" id="witness2IDProof" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+  
+  <script>
+    function validateForm() {
+        var partner1Name = document.getElementById('partner1Name').value;
+        var partner1DOB = document.getElementById('partner1DOB').value;
+        var partner1Email = document.getElementById('partner1Email').value;
+        var partner1IDProof = document.getElementById('partner1IDProof').value;
+        var partner2Name = document.getElementById('partner2Name').value;
+        var partner2DOB = document.getElementById('partner2DOB').value;
+        var partner2Email = document.getElementById('partner2Email').value;
+        var partner2IDProof = document.getElementById('partner2IDProof').value;
+        var witness1Name = document.getElementById('witness1Name').value;
+        var witness1IDProof = document.getElementById('witness1IDProof').value;
+        var witness2Name = document.getElementById('witness2Name').value;
+        var witness2IDProof = document.getElementById('witness2IDProof').value;
+    
+        // Validation for empty fields
+        if (!partner1Name || !partner1DOB || !partner1Email || !partner1IDProof ||
+            !partner2Name || !partner2DOB || !partner2Email || !partner2IDProof ||
+            !witness1Name || !witness1IDProof || !witness2Name || !witness2IDProof) {
+            alert("All fields are required");
+            return false;
+        }
+    
+        // Email format validation
+        var emailRegex = /^\S+@\S+\.\S+$/;
+        if (!emailRegex.test(partner1Email) || !emailRegex.test(partner2Email)) {
+            alert("Please enter valid email addresses for partners");
+            return false;
+        }
+    
+        // File extension validation
+        var validExtensions = ["jpg", "jpeg", "png", "pdf"];
+        if (!isValidFileExtension(partner1IDProof, validExtensions) || !isValidFileExtension(partner2IDProof, validExtensions) ||
+            !isValidFileExtension(witness1IDProof, validExtensions) || !isValidFileExtension(witness2IDProof, validExtensions)) {
+            alert("Please upload ID proofs in JPG, JPEG, PNG, or PDF format only");
+            return false;
+        }
+    
+        return true;
+    }
+    
+    function isValidFileExtension(fileInput, validExtensions) {
+        var filePath = fileInput.toLowerCase();
+        var fileExtension = filePath.substr((filePath.lastIndexOf('.') + 1));
+        return validExtensions.includes(fileExtension);
+    }
+    </script>
+    
+</body>
+</html>
